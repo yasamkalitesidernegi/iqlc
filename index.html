@@ -7,7 +7,7 @@
   <meta name="description" content="III. International Quality of Life Conference / III. Uluslararası Yaşam Kalitesi Konferansı" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,6 +22,15 @@
   </div>
 
   <header class="hero" id="home">
+    <div class="hero-slider" aria-hidden="true">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80');"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1800&q=80');"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1800&q=80');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+
     <nav class="navbar container">
       <a href="#home" class="brand">
         <span class="brand-mark">IQLC</span>
@@ -43,32 +52,43 @@
     <div class="container hero-grid">
       <div class="hero-copy reveal">
         <span class="eyebrow" data-i18n="hero.eyebrow">Hibrit Akademik Konferans</span>
-        <h1 data-i18n="hero.title">III. Uluslararası Yaşam Kalitesi Konferansı</h1>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">
-          Yaşam kalitesi kavramını disiplinlerarası bir çerçevede ele alan, Türkçe ve İngilizce bildirilere açık uluslararası konferans.
-        </p>
+        <div class="hero-title-stack">
+          <h1 class="hero-title-main" data-i18n="hero.title">III. Uluslararası Yaşam Kalitesi Konferansı</h1>
+          <div class="hero-title-live">
+            <span data-i18n="hero.livePrefix">Temamız:</span>
+            <strong id="liveWord">Wellbeing</strong>
+          </div>
+        </div>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Yaşam kalitesi kavramını disiplinlerarası bir çerçevede ele alan, Türkçe ve İngilizce bildirilere açık uluslararası konferans.</p>
+
+        <div class="hero-badges reveal delay-1">
+          <span class="hero-chip" data-i18n="hero.chip1">Uluslararası Akademik Ağ</span>
+          <span class="hero-chip" data-i18n="hero.chip2">Hibrit Katılım</span>
+          <span class="hero-chip" data-i18n="hero.chip3">TR / EN Sunumlar</span>
+        </div>
+
         <div class="hero-meta">
-          <div class="meta-card">
+          <div class="meta-card glass tilt-card">
             <strong data-i18n="hero.dateLabel">Tarih</strong>
             <span data-i18n="hero.dateValue">16–17 Ocak 2026</span>
           </div>
-          <div class="meta-card">
+          <div class="meta-card glass tilt-card">
             <strong data-i18n="hero.locationLabel">Yer</strong>
             <span data-i18n="hero.locationValue">Çanakkale / Türkiye</span>
           </div>
-          <div class="meta-card">
+          <div class="meta-card glass tilt-card">
             <strong data-i18n="hero.modeLabel">Format</strong>
             <span data-i18n="hero.modeValue">Hibrit</span>
           </div>
         </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://www.google.com" target="_blank" rel="noopener" data-i18n="hero.primaryCta">Bildiri Gönder</a>
+          <a class="btn btn-primary pulse" href="https://www.google.com" target="_blank" rel="noopener" data-i18n="hero.primaryCta">Bildiri Gönder</a>
           <a class="btn btn-secondary" href="#registration" data-i18n="hero.secondaryCta">Katılım Bilgileri</a>
         </div>
       </div>
 
       <div class="hero-panel reveal delay-1">
-        <div class="countdown-card">
+        <div class="countdown-card glass floating-card">
           <p class="countdown-label" data-i18n="countdown.label">Konferansa Kalan Süre</p>
           <div class="countdown-grid" id="countdown">
             <div><span id="days">--</span><small data-i18n="countdown.days">Gün</small></div>
@@ -77,7 +97,7 @@
             <div><span id="seconds">--</span><small data-i18n="countdown.seconds">Saniye</small></div>
           </div>
         </div>
-        <div class="info-card">
+        <div class="info-card glass floating-card delay-card">
           <span class="badge" data-i18n="hero.infoBadge">Öne Çıkanlar</span>
           <ul>
             <li data-i18n="hero.info1">Türkçe ve İngilizce bildiri kabulü</li>
@@ -86,11 +106,94 @@
             <li data-i18n="hero.info4">Akademi, sağlık, eğitim ve sosyal bilimlerden katılım</li>
           </ul>
         </div>
+        <div class="floating-mini-cards">
+          <div class="mini-card glass reveal"><span>01</span><strong data-i18n="mini.one">Araştırma</strong></div>
+          <div class="mini-card glass reveal delay-1"><span>02</span><strong data-i18n="mini.two">Sağlık</strong></div>
+          <div class="mini-card glass reveal delay-2"><span>03</span><strong data-i18n="mini.three">Toplum</strong></div>
+        </div>
       </div>
+    </div>
+
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span data-i18n="marquee.1">Quality of Life</span>
+        <span>•</span>
+        <span data-i18n="marquee.2">Wellbeing</span>
+        <span>•</span>
+        <span data-i18n="marquee.3">Health</span>
+        <span>•</span>
+        <span data-i18n="marquee.4">Education</span>
+        <span>•</span>
+        <span data-i18n="marquee.5">Sustainability</span>
+        <span>•</span>
+        <span data-i18n="marquee.6">Social Impact</span>
+        <span>•</span>
+        <span data-i18n="marquee.1">Quality of Life</span>
+        <span>•</span>
+        <span data-i18n="marquee.2">Wellbeing</span>
+        <span>•</span>
+        <span data-i18n="marquee.3">Health</span>
+        <span>•</span>
+        <span data-i18n="marquee.4">Education</span>
+        <span>•</span>
+        <span data-i18n="marquee.5">Sustainability</span>
+        <span>•</span>
+        <span data-i18n="marquee.6">Social Impact</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span data-i18n="hero.scroll">Aşağı Kaydır</span>
+      <div class="mouse"><span></span></div>
     </div>
   </header>
 
   <main>
+    <section class="motion-strip">
+      <div class="container">
+        <div class="motion-strip-grid reveal">
+          <article class="motion-card glow-card">
+            <span class="motion-icon">✦</span>
+            <h3 data-i18n="motion.1.title">Dinamik Program</h3>
+            <p data-i18n="motion.1.text">Tematik oturumlar, bilimsel sunumlar ve disiplinlerarası etkileşim.</p>
+          </article>
+          <article class="motion-card glow-card">
+            <span class="motion-icon">◉</span>
+            <h3 data-i18n="motion.2.title">Küresel Katılım</h3>
+            <p data-i18n="motion.2.text">Ulusal ve uluslararası katılımcılar için açık akademik platform.</p>
+          </article>
+          <article class="motion-card glow-card">
+            <span class="motion-icon">△</span>
+            <h3 data-i18n="motion.3.title">Canlı Deneyim</h3>
+            <p data-i18n="motion.3.text">Hareketli bloklar, etkileşimli alanlar ve modern kongre hissi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-section">
+      <div class="container">
+        <div class="stats-grid reveal">
+          <div class="stat-box glass">
+            <strong class="counter" data-target="18">0</strong>
+            <span data-i18n="stats.1">Ana tema başlığı</span>
+          </div>
+          <div class="stat-box glass">
+            <strong class="counter" data-target="2">0</strong>
+            <span data-i18n="stats.2">Konferans günü</span>
+          </div>
+          <div class="stat-box glass">
+            <strong class="counter" data-target="2">0</strong>
+            <span data-i18n="stats.3">Konferans dili</span>
+          </div>
+          <div class="stat-box glass">
+            <strong class="counter" data-target="100">0</strong>
+            <span data-i18n="stats.4">+ Akademik etkileşim hedefi</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="about">
       <div class="container">
         <div class="section-heading reveal">
@@ -113,26 +216,11 @@
             <h3 data-i18n="dates.venueTitle">Konferans Yeri</h3>
             <p data-i18n="dates.venueText">Çanakkale Onsekiz Mart Üniversitesi, Çanakkale Uygulamalı Bilimler Fakültesi Konferans Salonu</p>
           </article>
-          <article class="timeline-card">
-            <span data-i18n="dates.item1Date">26/12/2025</span>
-            <h3 data-i18n="dates.item1Title">Özet Gönderim Son Tarihi</h3>
-          </article>
-          <article class="timeline-card">
-            <span data-i18n="dates.item2Date">28/12/2025</span>
-            <h3 data-i18n="dates.item2Title">Kabul Edilen Bildirilerin İlanı</h3>
-          </article>
-          <article class="timeline-card">
-            <span data-i18n="dates.item3Date">02/01/2026</span>
-            <h3 data-i18n="dates.item3Title">Kayıt İçin Son Tarih</h3>
-          </article>
-          <article class="timeline-card">
-            <span data-i18n="dates.item4Date">04/01/2026</span>
-            <h3 data-i18n="dates.item4Title">Programın İlanı</h3>
-          </article>
-          <article class="timeline-card">
-            <span data-i18n="dates.item5Date">30/01/2026</span>
-            <h3 data-i18n="dates.item5Title">Tam Metin Son Teslim Tarihi</h3>
-          </article>
+          <article class="timeline-card move-up"><span data-i18n="dates.item1Date">26/12/2025</span><h3 data-i18n="dates.item1Title">Özet Gönderim Son Tarihi</h3></article>
+          <article class="timeline-card move-up"><span data-i18n="dates.item2Date">28/12/2025</span><h3 data-i18n="dates.item2Title">Kabul Edilen Bildirilerin İlanı</h3></article>
+          <article class="timeline-card move-up"><span data-i18n="dates.item3Date">02/01/2026</span><h3 data-i18n="dates.item3Title">Kayıt İçin Son Tarih</h3></article>
+          <article class="timeline-card move-up"><span data-i18n="dates.item4Date">04/01/2026</span><h3 data-i18n="dates.item4Title">Programın İlanı</h3></article>
+          <article class="timeline-card move-up"><span data-i18n="dates.item5Date">30/01/2026</span><h3 data-i18n="dates.item5Title">Tam Metin Son Teslim Tarihi</h3></article>
         </div>
       </div>
     </section>
@@ -144,215 +232,11 @@
           <h2 data-i18n="topics.title">Bildiri Alanları</h2>
         </div>
         <div class="topic-grid reveal delay-1">
-          <div class="topic-pill" data-i18n="topics.1">Kavramsal tartışmalar</div>
-          <div class="topic-pill" data-i18n="topics.2">Yaşam kalitesinin ölçülmesi</div>
-          <div class="topic-pill" data-i18n="topics.3">Dijitalleşme ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.4">Medya ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.5">Ekonomi ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.6">Eğitim ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.7">Kültür, turizm ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.8">Gıda, tarım ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.9">Enerji ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.10">Sağlık ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.11">Spor ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.12">Yaşanabilir şehirler</div>
-          <div class="topic-pill" data-i18n="topics.13">Hukuk ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.14">Psikoloji ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.15">Sanat ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.16">Kamu hizmetleri ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.17">Çevresel sorunlar ve yaşam kalitesi</div>
-          <div class="topic-pill" data-i18n="topics.18">Diğer ilgili konular</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="publication">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" data-i18n="publication.kicker">Yayın Olanakları</span>
-          <h2 data-i18n="publication.title">Sunulan Bildiriler İçin Seçenekler</h2>
-        </div>
-        <div class="cards-3 reveal delay-1">
-          <article class="info-box">
-            <h3 data-i18n="publication.box1Title">Bildiri Kitabı</h3>
-            <p data-i18n="publication.box1Text">Sunulan bildiriler ISBN’li e-kitap olarak yayımlanacaktır.</p>
-          </article>
-          <article class="info-box">
-            <h3 data-i18n="publication.box2Title">Editoryal Kitap</h3>
-            <p data-i18n="publication.box2Text">İsteyen yazarlar çalışmalarını alanlarına uygun ISBN’li ve bandrollü editoryal kitapta bölüm olarak yayımlatabilir. Ücret: makale başına 50 USD.</p>
-          </article>
-          <article class="info-box">
-            <h3 data-i18n="publication.box3Title">İndeksli Dergiler</h3>
-            <p data-i18n="publication.box3Text">Uygun bulunan çalışmalar, dergi kurullarının değerlendirmesi sonrası uluslararası hakemli ve indeksli Holistence Academy dergilerinde yayımlanabilir.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="registration">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" data-i18n="registration.kicker">Katılım</span>
-          <h2 data-i18n="registration.title">Kayıt ve Ödeme Bilgileri</h2>
-        </div>
-        <div class="pricing-grid reveal delay-1">
-          <div class="price-card">
-            <strong data-i18n="registration.price1Title">Online Katılım</strong>
-            <span>500 TL</span>
-            <p data-i18n="registration.priceNote">Ücretler bildiri başına alınmaktadır.</p>
-          </div>
-          <div class="price-card highlight">
-            <strong data-i18n="registration.price2Title">Yüz Yüze Sunum</strong>
-            <span>1.000 TL</span>
-            <p data-i18n="registration.priceNote">Ücretler bildiri başına alınmaktadır.</p>
-          </div>
-          <div class="price-card">
-            <strong data-i18n="registration.price3Title">Öğrenci Katılımı</strong>
-            <span>750 TL</span>
-            <p data-i18n="registration.price3Note">Lisans ve yüksek lisans öğrencileri için yüz yüze katılım ücreti.</p>
-          </div>
-        </div>
-        <div class="bank-card reveal delay-2">
-          <h3 data-i18n="registration.bankTitle">Kayıt ve Ödeme</h3>
-          <p><strong data-i18n="registration.bankNameLabel">Hesap Adı:</strong> <span data-i18n="registration.bankNameValue">Yaşam Kalitesi Derneği</span></p>
-          <p><strong data-i18n="registration.bankBranchLabel">Banka / Şube:</strong> <span data-i18n="registration.bankBranchValue">Ziraat Bankası Kordon Şubesi</span></p>
-          <p><strong>IBAN:</strong> TR91 0001 0008 1397 7229 9850 01</p>
-          <p data-i18n="registration.bankReceipt">Dekontunuzu e-posta ile veya WhatsApp üzerinden iletebilirsiniz.</p>
-          <p class="important-note" data-i18n="registration.bankNote">Önemli not: Ödeme açıklamasına adınız ve “Derneğe Bağış” ifadesi yazılmalıdır.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="boards">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" data-i18n="boards.kicker">Kurullar</span>
-          <h2 data-i18n="boards.title">Akademik Yapı</h2>
-        </div>
-        <div class="boards-grid reveal delay-1">
-          <article class="board-card">
-            <h3 data-i18n="boards.presidentTitle">Konferans Başkanı</h3>
-            <ul>
-              <li>Prof. Dr. Özge Uysal Şahin</li>
-            </ul>
-          </article>
-          <article class="board-card">
-            <h3 data-i18n="boards.advisoryTitle">Danışma Kurulu</h3>
-            <ul>
-              <li>Prof. Dr. İ. Melih Baş</li>
-              <li>Prof. Dr. Turgay Berksoy</li>
-              <li>Assoc. Prof. Dr. Larissa Batrancea</li>
-              <li>Prof. Dr. Ariwa Ezendu</li>
-              <li>Prof. Dr. Goran Ilik</li>
-              <li>Assoc. Prof. Dr. Hojjatollah Javani</li>
-              <li>Prof. Dr. Bhimaraya Metri</li>
-              <li>Prof. Dr. Nurida Novruzova</li>
-              <li>Prof. Dr. Mehmet Şahin</li>
-              <li>Prof. Dr. Sholpan Zharkynbekova</li>
-            </ul>
-          </article>
-          <article class="board-card">
-            <h3 data-i18n="boards.organizingTitle">Düzenleme Kurulu</h3>
-            <ul>
-              <li>Assoc. Prof. Dr. Hasan Erbay</li>
-              <li>İlknur Hersek Sarı</li>
-              <li>Dr. Ergül Söylemezoğlu</li>
-              <li>Prof. Dr. Mehmet Şahin</li>
-              <li>Prof. Dr. Özge Uysal Şahin</li>
-            </ul>
-          </article>
-        </div>
-        <div class="board-card wide reveal delay-2">
-          <h3 data-i18n="boards.scientificTitle">Bilim Kurulu</h3>
-          <p class="muted" data-i18n="boards.scientificIntro">Aşağıda kurulun öne çıkan üyelerinden bir seçki yer almaktadır.</p>
-          <div class="scientific-columns">
-            <ul>
-              <li>Prof. Dr. Sevda Akar</li>
-              <li>Assist. Prof. Dr. Jale Akgöl</li>
-              <li>Dr. Mahmaod Al-Rawad</li>
-              <li>Dr. Jollie N. Alson</li>
-              <li>Dr. Christo Ananth</li>
-              <li>Prof. Dr. Ekaterina Arabska</li>
-              <li>Assoc. Prof. Dr. Amran Awang</li>
-              <li>Prof. Dr. Zahide Ayyıldız Onaran</li>
-              <li>Prof. Dr. İ. Melih Baş</li>
-              <li>Prof. Dr. Turgay Berksoy</li>
-            </ul>
-            <ul>
-              <li>Prof. Dr. Sergii Burlutski</li>
-              <li>Prof. Dr. Slobodan Cerovic</li>
-              <li>Assoc. Prof. Dr. Nazan Çalbayram</li>
-              <li>Prof. Dr. Nur Dilbaz Alacahan</li>
-              <li>Assoc. Prof. Dr. Filiz Tufan Emini Kurtuluş</li>
-              <li>Assoc. Prof. Dr. Merve Ertok Onurlu</li>
-              <li>Prof. Dr. Rahiyla Geybullayeva</li>
-              <li>Prof. Dr. Nader Ghotbi</li>
-              <li>Prof. Dr. Malgorzata Magdalena Hybka</li>
-              <li>Prof. Dr. Goran Ilik</li>
-            </ul>
-            <ul>
-              <li>Assoc. Prof. Dr. Hojjatollah Javani</li>
-              <li>Prof. Dr. Mamatkul Juraev</li>
-              <li>Prof. Dr. Panagiotis Kyriazopoulos</li>
-              <li>Prof. Dr. Elizabeta Mitreva</li>
-              <li>Prof. Dr. Yüksel Özdemir</li>
-              <li>Prof. Dr. Igor Pustylnick</li>
-              <li>Dr. Andrea Quintiliani</li>
-              <li>Prof. Dr. Amer Al Roubaie</li>
-              <li>Dr. Julia Isabel Rodriguez Morales</li>
-              <li>Dr. Gulgaisha Sagidolda</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="rules">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" data-i18n="rules.kicker">Yazım Kuralları</span>
-          <h2 data-i18n="rules.title">Özet ve Tam Metin Kuralları</h2>
-        </div>
-        <div class="cards-2 reveal delay-1">
-          <article class="rule-card">
-            <h3 data-i18n="rules.abstractTitle">Özet Yazım Kuralları</h3>
-            <p data-i18n="rules.abstractText">Özetler tam metin kurallarına uygun, amaç ve kapsamı yansıtan, yöntem ve bulguları içeren biçimde hazırlanmalıdır. En az 200, en fazla 300 sözcük olmalı; 3 ila 5 anahtar kelime içermelidir. Türkçe bildirilerde İngilizce başlık ve özet de eklenmelidir.</p>
-          </article>
-          <article class="rule-card">
-            <h3 data-i18n="rules.fullTextTitle">Tam Metin Kuralları</h3>
-            <p data-i18n="rules.fullTextText">Tam metinler, konferansın yayımladığı şablon dosyasına uygun hazırlanmalıdır. Dergi veya editoryal kitap başvurularında ilgili yayının kendi yazım kuralları esas alınır.</p>
-            <a class="text-link" href="https://docs.google.com" target="_blank" rel="noopener" data-i18n="rules.templateLink">Şablon Dosyasını Aç</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="contact">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" data-i18n="contact.kicker">İletişim</span>
-          <h2 data-i18n="contact.title">Bize Ulaşın</h2>
-        </div>
-        <div class="contact-card reveal delay-1">
-          <div>
-            <h3>Yaşam Kalitesi Derneği</h3>
-            <p>Namık Kemal Mahallesi, Helvacıoğlu Sokak No: 19-21/A<br>17000 Merkez-Çanakkale</p>
-          </div>
-          <div>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/905397024400">+90 539 702 4400</a></p>
-            <p><strong>Email:</strong> <a href="mailto:yasamkalitesidernegi@gmail.com">yasamkalitesidernegi@gmail.com</a></p>
-          </div>
+          <div class="topic-pill">Kavramsal tartışmalar</div><div class="topic-pill">Yaşam kalitesinin ölçülmesi</div><div class="topic-pill">Dijitalleşme ve yaşam kalitesi</div><div class="topic-pill">Medya ve yaşam kalitesi</div><div class="topic-pill">Ekonomi ve yaşam kalitesi</div><div class="topic-pill">Eğitim ve yaşam kalitesi</div><div class="topic-pill">Kültür, turizm ve yaşam kalitesi</div><div class="topic-pill">Gıda, tarım ve yaşam kalitesi</div><div class="topic-pill">Enerji ve yaşam kalitesi</div><div class="topic-pill">Sağlık ve yaşam kalitesi</div><div class="topic-pill">Spor ve yaşam kalitesi</div><div class="topic-pill">Yaşanabilir şehirler</div><div class="topic-pill">Hukuk ve yaşam kalitesi</div><div class="topic-pill">Psikoloji ve yaşam kalitesi</div><div class="topic-pill">Sanat ve yaşam kalitesi</div><div class="topic-pill">Kamu hizmetleri ve yaşam kalitesi</div><div class="topic-pill">Çevresel sorunlar ve yaşam kalitesi</div><div class="topic-pill">Diğer ilgili konular</div>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 IQLC</p>
-      <a href="#home" data-i18n="footer.backToTop">Yukarı Dön</a>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>

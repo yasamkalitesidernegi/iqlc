@@ -12,7 +12,7 @@ const translations = {
     'hero.title': 'III. Uluslararası Yaşam Kalitesi Konferansı',
     'hero.subtitle': 'Yaşam kalitesi kavramını disiplinlerarası bir çerçevede ele alan, Türkçe ve İngilizce bildirilere açık uluslararası konferans.',
     'hero.dateLabel': 'Tarih',
-    'hero.dateValue': '16–17 Ocak 2026',
+    'hero.dateValue': '10–11 Aralık 2026',
     'hero.locationLabel': 'Yer',
     'hero.locationValue': 'Çanakkale / Türkiye',
     'hero.modeLabel': 'Format',
@@ -152,7 +152,7 @@ const translations = {
     'hero.title': 'III. International Quality of Life Conference',
     'hero.subtitle': 'An international conference addressing quality of life through an interdisciplinary lens and welcoming papers in Turkish and English.',
     'hero.dateLabel': 'Date',
-    'hero.dateValue': '16–17 January 2026',
+    'hero.dateValue': '10–11 December 2026',
     'hero.locationLabel': 'Venue',
     'hero.locationValue': 'Çanakkale / Türkiye',
     'hero.modeLabel': 'Format',
@@ -303,7 +303,20 @@ const navLinks = document.querySelector('.nav-links');
 menuToggle?.addEventListener('click', () => navLinks.classList.toggle('open'));
 navLinks?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('open')));
 
-const targetDate = new Date('2026-01-16T09:00:00+03:00').getTime();
+
+const heroSlides = document.querySelectorAll('.hero-slide');
+let currentHeroSlide = 0;
+function rotateHeroSlides() {
+  if (!heroSlides.length) return;
+  heroSlides[currentHeroSlide].classList.remove('active');
+  currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+  heroSlides[currentHeroSlide].classList.add('active');
+}
+if (heroSlides.length > 1) {
+  setInterval(rotateHeroSlides, 4500);
+}
+
+const targetDate = new Date('2026-12-10T09:00:00+03:00').getTime();
 const countdownIds = { days: 'days', hours: 'hours', minutes: 'minutes', seconds: 'seconds' };
 
 function updateCountdown() {

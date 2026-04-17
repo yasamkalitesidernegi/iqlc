@@ -25,7 +25,8 @@
 
         <nav class="main-nav" id="mainNav">
           <a href="#home" data-i18n="nav.home">Ana Sayfa</a>
-          <a href="#about" data-i18n="nav.about">Konferans</a>
+          <a href="#about" data-i18n="nav.about">Konferans Hakkında</a>
+          <a href="#program" data-i18n="nav.program">Program</a>
           <a href="#topics" data-i18n="nav.topics">Temalar</a>
           <a href="#speakers" data-i18n="nav.speakers">Konuşmacılar</a>
           <a href="#contact" data-i18n="nav.contact">İletişim</a>
@@ -33,15 +34,11 @@
 
         <div class="header-actions">
           <div class="lang-switch" aria-label="Language switcher">
-            <button type="button" class="lang-btn active" data-lang="tr">
-              TR
-            </button>
+            <button type="button" class="lang-btn active" data-lang="tr">TR</button>
             <button type="button" class="lang-btn" data-lang="en">EN</button>
           </div>
 
-          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-            ☰
-          </button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
         </div>
       </div>
     </header>
@@ -49,31 +46,49 @@
     <main>
       <section class="hero" id="home">
         <div class="hero-slider" id="heroSlider">
-          <div class="hero-slide active">
-            <img
-              src="assets/slide-1.jpg"
-              alt="Conference visual"
-              class="hero-bg"
-            />
+          <div class="hero-slide">
+            <div class="hero-animated-bg hero-theme-1" id="heroTheme">
+              <span class="orb orb-1"></span>
+              <span class="orb orb-2"></span>
+              <span class="orb orb-3"></span>
+              <span class="grid-layer"></span>
+              <span class="light-beam"></span>
+            </div>
+
             <div class="hero-overlay"></div>
 
             <div class="container hero-content">
-              <span class="hero-badge" data-i18n="hero.badge">
-                IQLC 2026
-              </span>
+              <span class="hero-badge" data-i18n="hero.badge">IQLC 2026</span>
 
-              <h1 data-i18n="hero.title">
-                Uluslararası Yaşam Kalitesi Konferansı
-              </h1>
+              <div class="hero-title-wrap">
+                <span class="edition-mark" data-i18n="hero.edition">III.</span>
+                <div class="hero-title-block">
+                  <h1 data-i18n="hero.title">Uluslararası Yaşam Kalitesi Konferansı</h1>
+                </div>
+              </div>
 
               <p data-i18n="hero.subtitle">
-                Akademi, sağlık, toplum ve sürdürülebilir yaşam ekseninde
-                uluslararası buluşma.
+                Akademi, sağlık, toplum ve sürdürülebilir yaşam ekseninde uluslararası buluşma.
               </p>
+
+              <div class="hero-meta">
+                <div class="meta-item">
+                  <span class="meta-label" data-i18n="hero.meta1Label">Yıl</span>
+                  <strong data-i18n="hero.meta1Value">2026</strong>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label" data-i18n="hero.meta2Label">Seri</span>
+                  <strong data-i18n="hero.meta2Value">III. Konferans</strong>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label" data-i18n="hero.meta3Label">Odak</span>
+                  <strong data-i18n="hero.meta3Value">Yaşam Kalitesi</strong>
+                </div>
+              </div>
 
               <div class="hero-buttons">
                 <a href="#about" class="btn btn-primary" data-i18n="hero.cta1">
-                  Detayları İncele
+                  Konferansı İncele
                 </a>
                 <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta2">
                   İletişime Geç
@@ -83,12 +98,8 @@
           </div>
 
           <div class="slider-controls">
-            <button type="button" id="prevSlide" aria-label="Previous slide">
-              ‹
-            </button>
-            <button type="button" id="nextSlide" aria-label="Next slide">
-              ›
-            </button>
+            <button type="button" id="prevSlide" aria-label="Previous slide">‹</button>
+            <button type="button" id="nextSlide" aria-label="Next slide">›</button>
           </div>
         </div>
 
@@ -100,41 +111,85 @@
       <section class="section" id="about">
         <div class="container">
           <div class="section-head">
-            <span class="section-eyebrow" data-i18n="about.eyebrow">
-              Konferans
-            </span>
+            <span class="section-eyebrow" data-i18n="about.eyebrow">Konferans Hakkında</span>
             <h2 data-i18n="about.title">IQLC 2026 Hakkında</h2>
+            <p class="section-intro" data-i18n="about.intro">
+              IQLC, yaşam kalitesi alanında çalışan akademisyenleri, araştırmacıları, uygulayıcıları
+              ve karar vericileri bir araya getiren uluslararası bir konferans platformudur.
+            </p>
           </div>
 
           <div class="about-grid">
             <div class="card">
-              <h3 data-i18n="about.card1Title">Uluslararası Katılım</h3>
+              <h3 data-i18n="about.card1Title">III. Uluslararası Buluşma</h3>
               <p data-i18n="about.card1Text">
-                Farklı ülkelerden akademisyenleri, uzmanları ve kurumları bir
-                araya getiren çok disiplinli bir platform.
+                Konferans bu yıl üçüncü kez düzenlenerek yaşam kalitesi alanındaki uluslararası
+                bilgi paylaşımını ve akademik etkileşimi güçlendirmeyi amaçlamaktadır.
               </p>
             </div>
 
             <div class="card">
-              <h3 data-i18n="about.card2Title">Bilimsel İçerik</h3>
+              <h3 data-i18n="about.card2Title">Disiplinlerarası Yaklaşım</h3>
               <p data-i18n="about.card2Text">
-                Yaşam kalitesi, sağlık, eğitim, çevre, kent ve toplumsal refah
-                ekseninde güncel oturumlar.
+                Sağlık, eğitim, sosyal politika, çevre, şehirleşme, psikoloji ve sürdürülebilirlik
+                gibi farklı alanları ortak bir çatı altında buluşturur.
               </p>
             </div>
 
             <div class="card">
-              <h3 data-i18n="about.card3Title">Küresel Etki</h3>
+              <h3 data-i18n="about.card3Title">Küresel Akademik Ağ</h3>
               <p data-i18n="about.card3Text">
-                Bilgi paylaşımını güçlendiren, iş birliği fırsatları sunan ve
-                sürdürülebilir gelecek vizyonunu destekleyen bir buluşma.
+                Ulusal ve uluslararası katılımcılar arasında iş birliği, ortak yayın, yeni proje ve
+                bilimsel ağların gelişmesine katkı sağlar.
+              </p>
+            </div>
+          </div>
+
+          <div class="conference-detail-box">
+            <h3 data-i18n="about.detailTitle">Konferansın Amacı</h3>
+            <p data-i18n="about.detailText1">
+              Yaşam kalitesi kavramını çok boyutlu bir perspektifle ele alarak insan, toplum ve çevre
+              arasındaki ilişkileri akademik düzlemde tartışmaya açmak.
+            </p>
+            <p data-i18n="about.detailText2">
+              Konferans, bilimsel sunumlar, davetli konuşmalar ve disiplinlerarası oturumlar aracılığıyla
+              hem teorik hem uygulamalı katkıları görünür kılmayı hedefler.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="program">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-eyebrow" data-i18n="program.eyebrow">Program</span>
+            <h2 data-i18n="program.title">Konferans Yapısı</h2>
+          </div>
+
+          <div class="program-grid">
+            <div class="program-item">
+              <h3 data-i18n="program.item1Title">Açılış Oturumları</h3>
+              <p data-i18n="program.item1Text">
+                Konferans vizyonunu ve temel yaklaşımı ortaya koyan açılış konuşmaları.
+              </p>
+            </div>
+            <div class="program-item">
+              <h3 data-i18n="program.item2Title">Bilimsel Sunumlar</h3>
+              <p data-i18n="program.item2Text">
+                Hakemli bildiriler, araştırma sonuçları ve akademik tartışma oturumları.
+              </p>
+            </div>
+            <div class="program-item">
+              <h3 data-i18n="program.item3Title">Özel Konuşmalar</h3>
+              <p data-i18n="program.item3Text">
+                Alanında uzman davetli konuşmacıların güncel değerlendirmeleri.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section alt" id="topics">
+      <section class="section" id="topics">
         <div class="container">
           <div class="section-head">
             <span class="section-eyebrow" data-i18n="topics.eyebrow">Temalar</span>
@@ -147,24 +202,22 @@
             <div class="topic-item" data-i18n="topics.item3">Kent, Çevre ve Yaşam</div>
             <div class="topic-item" data-i18n="topics.item4">Sosyal Politika</div>
             <div class="topic-item" data-i18n="topics.item5">Sürdürülebilirlik</div>
-            <div class="topic-item" data-i18n="topics.item6">Disiplinlerarası Çalışmalar</div>
+            <div class="topic-item" data-i18n="topics.item6">Psikoloji ve Yaşam Kalitesi</div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="speakers">
+      <section class="section alt" id="speakers">
         <div class="container">
           <div class="section-head">
-            <span class="section-eyebrow" data-i18n="speakers.eyebrow">
-              Konuşmacılar
-            </span>
-            <h2 data-i18n="speakers.title">Yakında Açıklanacak</h2>
+            <span class="section-eyebrow" data-i18n="speakers.eyebrow">Konuşmacılar</span>
+            <h2 data-i18n="speakers.title">Konuşmacılar ve Katılımcılar</h2>
           </div>
 
           <div class="info-box">
             <p data-i18n="speakers.text">
-              Davetli konuşmacılar ve oturum detayları çok yakında bu alanda
-              paylaşılacaktır.
+              Davetli konuşmacılar, oturum başkanları ve bilimsel kurul bilgileri yakında ilan edilecektir.
+              Konferans, farklı ülkelerden akademisyenler ve uzmanları bir araya getirmeyi hedeflemektedir.
             </p>
           </div>
         </div>
@@ -174,19 +227,14 @@
         <div class="container">
           <div class="contact-box">
             <div>
-              <span class="section-eyebrow" data-i18n="contact.eyebrow">
-                İletişim
-              </span>
+              <span class="section-eyebrow" data-i18n="contact.eyebrow">İletişim</span>
               <h2 data-i18n="contact.title">Bizimle İletişime Geçin</h2>
               <p data-i18n="contact.text">
-                Konferansla ilgili soru, iş birliği ve katılım talepleriniz için
-                bizimle iletişime geçebilirsiniz.
+                Konferansla ilgili soru, iş birliği ve katılım talepleriniz için bizimle iletişime geçebilirsiniz.
               </p>
             </div>
 
-            <a href="mailto:yasamkalitesidernegi@gmail.com" class="btn btn-primary">
-              info@iqlc.org
-            </a>
+            <a href="mailto:yasamkalitesidernegi@gmail.com" class="btn btn-primary">yasamkalitesidernegi@gmail.com</a>
           </div>
         </div>
       </section>
@@ -194,12 +242,10 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p data-i18n="footer.copy">
-          © 2026 IQLC - Tüm hakları saklıdır.
-        </p>
+        <p data-i18n="footer.copy">© 2026 IQLC - Tüm hakları saklıdır.</p>
       </div>
     </footer>
 
     <script src="script.js"></script>
   </body>
-</html>F
+</html>

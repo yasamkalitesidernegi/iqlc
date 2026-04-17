@@ -6,39 +6,67 @@ const translations = {
     },
     nav: {
       home: "Ana Sayfa",
-      about: "Konferans",
+      about: "Konferans Hakkında",
+      program: "Program",
       topics: "Temalar",
       speakers: "Konuşmacılar",
       contact: "İletişim",
     },
     hero: {
       badge: "IQLC 2026",
+      edition: "III.",
       title: "Uluslararası Yaşam Kalitesi Konferansı",
       subtitle:
         "Akademi, sağlık, toplum ve sürdürülebilir yaşam ekseninde uluslararası buluşma.",
-      cta1: "Detayları İncele",
+      meta1Label: "Yıl",
+      meta1Value: "2026",
+      meta2Label: "Seri",
+      meta2Value: "III. Konferans",
+      meta3Label: "Odak",
+      meta3Value: "Yaşam Kalitesi",
+      cta1: "Konferansı İncele",
       cta2: "İletişime Geç",
     },
     ticker: [
-      "Uluslararası katılım",
-      "Bilimsel oturumlar",
-      "Çağrılı konuşmacılar",
-      "Yaşam kalitesi odaklı yaklaşım",
+      "III. Uluslararası Yaşam Kalitesi Konferansı",
+      "Disiplinlerarası akademik platform",
+      "Ulusal ve uluslararası katılım",
+      "Bilimsel sunumlar ve özel oturumlar",
+      "Yaşam kalitesi odaklı küresel buluşma",
       "Sürdürülebilir gelecek vizyonu",
-      "Çok disiplinli akademik paylaşım",
     ],
     about: {
-      eyebrow: "Konferans",
+      eyebrow: "Konferans Hakkında",
       title: "IQLC 2026 Hakkında",
-      card1Title: "Uluslararası Katılım",
+      intro:
+        "IQLC, yaşam kalitesi alanında çalışan akademisyenleri, araştırmacıları, uygulayıcıları ve karar vericileri bir araya getiren uluslararası bir konferans platformudur.",
+      card1Title: "III. Uluslararası Buluşma",
       card1Text:
-        "Farklı ülkelerden akademisyenleri, uzmanları ve kurumları bir araya getiren çok disiplinli bir platform.",
-      card2Title: "Bilimsel İçerik",
+        "Konferans bu yıl üçüncü kez düzenlenerek yaşam kalitesi alanındaki uluslararası bilgi paylaşımını ve akademik etkileşimi güçlendirmeyi amaçlamaktadır.",
+      card2Title: "Disiplinlerarası Yaklaşım",
       card2Text:
-        "Yaşam kalitesi, sağlık, eğitim, çevre, kent ve toplumsal refah ekseninde güncel oturumlar.",
-      card3Title: "Küresel Etki",
+        "Sağlık, eğitim, sosyal politika, çevre, şehirleşme, psikoloji ve sürdürülebilirlik gibi farklı alanları ortak bir çatı altında buluşturur.",
+      card3Title: "Küresel Akademik Ağ",
       card3Text:
-        "Bilgi paylaşımını güçlendiren, iş birliği fırsatları sunan ve sürdürülebilir gelecek vizyonunu destekleyen bir buluşma.",
+        "Ulusal ve uluslararası katılımcılar arasında iş birliği, ortak yayın, yeni proje ve bilimsel ağların gelişmesine katkı sağlar.",
+      detailTitle: "Konferansın Amacı",
+      detailText1:
+        "Yaşam kalitesi kavramını çok boyutlu bir perspektifle ele alarak insan, toplum ve çevre arasındaki ilişkileri akademik düzlemde tartışmaya açmak.",
+      detailText2:
+        "Konferans, bilimsel sunumlar, davetli konuşmalar ve disiplinlerarası oturumlar aracılığıyla hem teorik hem uygulamalı katkıları görünür kılmayı hedefler.",
+    },
+    program: {
+      eyebrow: "Program",
+      title: "Konferans Yapısı",
+      item1Title: "Açılış Oturumları",
+      item1Text:
+        "Konferans vizyonunu ve temel yaklaşımı ortaya koyan açılış konuşmaları.",
+      item2Title: "Bilimsel Sunumlar",
+      item2Text:
+        "Hakemli bildiriler, araştırma sonuçları ve akademik tartışma oturumları.",
+      item3Title: "Özel Konuşmalar",
+      item3Text:
+        "Alanında uzman davetli konuşmacıların güncel değerlendirmeleri.",
     },
     topics: {
       eyebrow: "Temalar",
@@ -48,41 +76,24 @@ const translations = {
       item3: "Kent, Çevre ve Yaşam",
       item4: "Sosyal Politika",
       item5: "Sürdürülebilirlik",
-      item6: "Disiplinlerarası Çalışmalar",
+      item6: "Psikoloji ve Yaşam Kalitesi",
     },
     speakers: {
       eyebrow: "Konuşmacılar",
-      title: "Yakında Açıklanacak",
-      text: "Davetli konuşmacılar ve oturum detayları çok yakında bu alanda paylaşılacaktır.",
+      title: "Konuşmacılar ve Katılımcılar",
+      text:
+        "Davetli konuşmacılar, oturum başkanları ve bilimsel kurul bilgileri yakında ilan edilecektir. Konferans, farklı ülkelerden akademisyenler ve uzmanları bir araya getirmeyi hedeflemektedir.",
     },
     contact: {
       eyebrow: "İletişim",
       title: "Bizimle İletişime Geçin",
-      text: "Konferansla ilgili soru, iş birliği ve katılım talepleriniz için bizimle iletişime geçebilirsiniz.",
+      text:
+        "Konferansla ilgili soru, iş birliği ve katılım talepleriniz için bizimle iletişime geçebilirsiniz.",
     },
     footer: {
       copy: "© 2026 IQLC - Tüm hakları saklıdır.",
     },
-    slides: [
-      {
-        title: "Uluslararası Yaşam Kalitesi Konferansı",
-        subtitle:
-          "Akademi, sağlık, toplum ve sürdürülebilir yaşam ekseninde uluslararası buluşma.",
-        image: "assets/slide-1.jpg",
-      },
-      {
-        title: "Bilimsel Paylaşım ve İş Birliği",
-        subtitle:
-          "Araştırmacılar, uzmanlar ve kurumlar için güçlü bir ortak platform.",
-        image: "assets/slide-2.jpg",
-      },
-      {
-        title: "Sürdürülebilir Yaşam İçin Ortak Vizyon",
-        subtitle:
-          "Yaşam kalitesini güçlendiren çözümler, tartışmalar ve yeni iş birlikleri.",
-        image: "assets/slide-3.jpg",
-      },
-    ],
+    heroThemes: ["hero-theme-1", "hero-theme-2", "hero-theme-3"],
   },
 
   en: {
@@ -92,39 +103,67 @@ const translations = {
     },
     nav: {
       home: "Home",
-      about: "Conference",
+      about: "About the Conference",
+      program: "Program",
       topics: "Themes",
       speakers: "Speakers",
       contact: "Contact",
     },
     hero: {
       badge: "IQLC 2026",
+      edition: "III.",
       title: "International Quality of Life Conference",
       subtitle:
         "An international meeting point for academia, health, society, and sustainable living.",
-      cta1: "Explore Details",
+      meta1Label: "Year",
+      meta1Value: "2026",
+      meta2Label: "Series",
+      meta2Value: "III. Conference",
+      meta3Label: "Focus",
+      meta3Value: "Quality of Life",
+      cta1: "Explore the Conference",
       cta2: "Contact Us",
     },
     ticker: [
-      "International participation",
-      "Scientific sessions",
-      "Invited speakers",
-      "Quality of life focus",
+      "III. International Quality of Life Conference",
+      "Interdisciplinary academic platform",
+      "National and international participation",
+      "Scientific presentations and special sessions",
+      "A global meeting point focused on quality of life",
       "Vision for a sustainable future",
-      "Interdisciplinary academic exchange",
     ],
     about: {
-      eyebrow: "Conference",
+      eyebrow: "About the Conference",
       title: "About IQLC 2026",
-      card1Title: "International Participation",
+      intro:
+        "IQLC is an international conference platform bringing together academics, researchers, practitioners, and decision-makers working in the field of quality of life.",
+      card1Title: "III. International Meeting",
       card1Text:
-        "A multidisciplinary platform bringing together academics, experts, and institutions from different countries.",
-      card2Title: "Scientific Content",
+        "This year, the conference will be organized for the third time, aiming to strengthen international knowledge exchange and academic interaction in the field of quality of life.",
+      card2Title: "Interdisciplinary Approach",
       card2Text:
-        "Up-to-date sessions focused on quality of life, health, education, environment, cities, and social well-being.",
-      card3Title: "Global Impact",
+        "It brings together health, education, social policy, environment, urbanization, psychology, and sustainability under a common framework.",
+      card3Title: "Global Academic Network",
       card3Text:
-        "A meeting point that strengthens knowledge exchange, creates collaboration opportunities, and supports a sustainable future vision.",
+        "It contributes to collaboration, joint publications, new projects, and the development of scientific networks among national and international participants.",
+      detailTitle: "Purpose of the Conference",
+      detailText1:
+        "To discuss the concept of quality of life from a multidimensional perspective and open the relationships between people, society, and environment to academic debate.",
+      detailText2:
+        "Through scientific presentations, invited talks, and interdisciplinary sessions, the conference aims to make both theoretical and practical contributions visible.",
+    },
+    program: {
+      eyebrow: "Program",
+      title: "Conference Structure",
+      item1Title: "Opening Sessions",
+      item1Text:
+        "Opening talks presenting the conference vision and core approach.",
+      item2Title: "Scientific Presentations",
+      item2Text:
+        "Peer-reviewed papers, research findings, and academic discussion sessions.",
+      item3Title: "Special Talks",
+      item3Text:
+        "Current evaluations by distinguished invited speakers in their fields.",
     },
     topics: {
       eyebrow: "Themes",
@@ -134,41 +173,24 @@ const translations = {
       item3: "City, Environment and Life",
       item4: "Social Policy",
       item5: "Sustainability",
-      item6: "Interdisciplinary Studies",
+      item6: "Psychology and Quality of Life",
     },
     speakers: {
       eyebrow: "Speakers",
-      title: "Coming Soon",
-      text: "Invited speakers and session details will be announced here very soon.",
+      title: "Speakers and Participants",
+      text:
+        "Information about invited speakers, session chairs, and the scientific committee will be announced soon. The conference aims to bring together academics and experts from different countries.",
     },
     contact: {
       eyebrow: "Contact",
       title: "Get in Touch",
-      text: "You can contact us for questions, collaboration requests, and participation inquiries regarding the conference.",
+      text:
+        "You can contact us for questions, collaboration requests, and participation inquiries regarding the conference.",
     },
     footer: {
       copy: "© 2026 IQLC - All rights reserved.",
     },
-    slides: [
-      {
-        title: "International Quality of Life Conference",
-        subtitle:
-          "An international meeting point for academia, health, society, and sustainable living.",
-        image: "assets/slide-1.jpg",
-      },
-      {
-        title: "Scientific Exchange and Collaboration",
-        subtitle:
-          "A strong common platform for researchers, experts, and institutions.",
-        image: "assets/slide-2.jpg",
-      },
-      {
-        title: "A Shared Vision for Sustainable Living",
-        subtitle:
-          "Solutions, discussions, and new collaborations that strengthen quality of life.",
-        image: "assets/slide-3.jpg",
-      },
-    ],
+    heroThemes: ["hero-theme-1", "hero-theme-2", "hero-theme-3"],
   },
 };
 
@@ -180,14 +202,14 @@ const htmlEl = document.documentElement;
 const langButtons = document.querySelectorAll(".lang-btn");
 const translatableElements = document.querySelectorAll("[data-i18n]");
 const tickerTrack = document.getElementById("tickerTrack");
-const heroSlider = document.getElementById("heroSlider");
+const heroTheme = document.getElementById("heroTheme");
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 const prevSlideBtn = document.getElementById("prevSlide");
 const nextSlideBtn = document.getElementById("nextSlide");
 
 function getNestedValue(obj, path) {
-  return path.split(".").reduce((acc, key) => acc && acc[key], obj);
+  return path.split(".").reduce((acc, key) => (acc ? acc[key] : null), obj);
 }
 
 function applyTranslations(lang) {
@@ -200,7 +222,7 @@ function applyTranslations(lang) {
     const key = el.getAttribute("data-i18n");
     const value = getNestedValue(dict, key);
 
-    if (value) {
+    if (value !== undefined && value !== null) {
       el.textContent = value;
     }
   });
@@ -210,47 +232,37 @@ function applyTranslations(lang) {
   });
 
   renderTicker(lang);
-  renderSlide(currentSlide, lang);
+  updateHeroTheme();
 }
 
 function renderTicker(lang) {
   const items = translations[lang].ticker;
-
-  if (!tickerTrack) return;
-
   const repeated = [...items, ...items, ...items];
+
   tickerTrack.innerHTML = repeated
     .map((item) => `<span class="ticker-item">${item}</span>`)
     .join("");
 }
 
-function renderSlide(index, lang) {
-  const slides = translations[lang].slides;
-  const slide = slides[index];
+function updateHeroTheme() {
+  const themes = translations[currentLang].heroThemes;
 
-  if (!slide || !heroSlider) return;
+  if (!heroTheme) return;
 
-  const slideContainer = heroSlider.querySelector(".hero-slide");
-  const titleEl = slideContainer.querySelector("h1");
-  const subtitleEl = slideContainer.querySelector("p");
-  const bgEl = slideContainer.querySelector(".hero-bg");
-
-  titleEl.textContent = slide.title;
-  subtitleEl.textContent = slide.subtitle;
-  bgEl.src = slide.image;
-  bgEl.alt = slide.title;
+  heroTheme.classList.remove("hero-theme-1", "hero-theme-2", "hero-theme-3");
+  heroTheme.classList.add(themes[currentSlide]);
 }
 
 function nextSlide() {
-  const slides = translations[currentLang].slides;
-  currentSlide = (currentSlide + 1) % slides.length;
-  renderSlide(currentSlide, currentLang);
+  const themes = translations[currentLang].heroThemes;
+  currentSlide = (currentSlide + 1) % themes.length;
+  updateHeroTheme();
 }
 
 function prevSlide() {
-  const slides = translations[currentLang].slides;
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  renderSlide(currentSlide, currentLang);
+  const themes = translations[currentLang].heroThemes;
+  currentSlide = (currentSlide - 1 + themes.length) % themes.length;
+  updateHeroTheme();
 }
 
 function startSlider() {

@@ -1,363 +1,205 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IQLC 2026 | III. International Quality of Life Conference</title>
-  <meta name="description" content="III. International Quality of Life Conference / III. Uluslararası Yaşam Kalitesi Konferansı" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="topbar-text" id="topbarTitle">III. Uluslararası Yaşam Kalitesi Konferansı</div>
-      <div class="lang-switch" aria-label="Dil seçimi"><button class="lang-btn is-active" data-lang="tr">TR</button><button class="lang-btn" data-lang="en">EN</button></div>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IQLC 2026</title>
+    <meta
+      name="description"
+      content="IQLC 2026 - International Quality of Life Conference"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand">
+          <img src="assets/logo.png" alt="IQLC Logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">IQLC 2026</span>
+            <span class="brand-subtitle" data-i18n="header.tagline">
+              Uluslararası Yaşam Kalitesi Konferansı
+            </span>
+          </div>
+        </a>
 
-  <header class="hero" id="home">
-    <div class="hero-slider" aria-hidden="true">
-      <div class="slide is-active" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');"></div>
-      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1600&q=80');"></div>
-      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');"></div>
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-gridlines"></div>
+        <nav class="main-nav" id="mainNav">
+          <a href="#home" data-i18n="nav.home">Ana Sayfa</a>
+          <a href="#about" data-i18n="nav.about">Konferans</a>
+          <a href="#topics" data-i18n="nav.topics">Temalar</a>
+          <a href="#speakers" data-i18n="nav.speakers">Konuşmacılar</a>
+          <a href="#contact" data-i18n="nav.contact">İletişim</a>
+        </nav>
 
-    <nav class="navbar container">
-      <a href="#home" class="brand" aria-label="IQLC 2026 Ana Sayfa">
-        <img src="assets/logo.png" alt="Yaşam Kalitesi Derneği logosu" class="brand-logo" />
-        <span class="brand-copy">
-          <strong id="brandName">Yaşam Kalitesi Derneği</strong>
-          <small>IQLC 2026</small>
-        </span>
-      </a>
+        <div class="header-actions">
+          <div class="lang-switch" aria-label="Language switcher">
+            <button type="button" class="lang-btn active" data-lang="tr">
+              TR
+            </button>
+            <button type="button" class="lang-btn" data-lang="en">EN</button>
+          </div>
 
-      <button class="menu-toggle" aria-label="Menüyü aç/kapat">☰</button>
-      <div class="nav-links">
-        <a href="#about" data-i18n="navInvitation">Davet</a>
-        <a href="#dates" data-i18n="navDate">Tarih</a>
-        <a href="#topics" data-i18n="navTopics">Konular</a>
-        <a href="#publication" data-i18n="navPublication">Yayın</a>
-        <a href="#registration" data-i18n="navRegistration">Katılım</a>
-        <a href="#boards" data-i18n="navBoards">Kurullar</a>
-        <a href="#contact" data-i18n="navContact">İletişim</a>
-      </div>
-    </nav>
-
-    <div class="container hero-content">
-      <div class="hero-copy reveal">
-        <span class="eyebrow" id="heroEyebrow">Hibrit • Çanakkale • 10–11 Aralık 2026</span>
-        <h1>
-          <span class="title-line" id="heroTitle1">III. Uluslararası</span>
-          <span class="title-line highlight" id="heroTitle2">Yaşam Kalitesi Konferansı</span>
-          <span class="title-line" id="heroTitle3">III. International Quality of Life Conference</span>
-        </h1>
-        <p class="hero-subtitle" id="heroSubtitle">Yaşam kalitesini çok boyutlu ve disiplinlerarası bir çerçevede tartışmaya açan uluslararası konferans deneyimi.</p>
-        <div class="hero-meta">
-          <div class="meta-card"><strong id="metaDateLabel">Tarih</strong><span id="metaDateValue">10–11 Aralık 2026</span></div>
-          <div class="meta-card"><strong id="metaVenueLabel">Yer</strong><span id="metaVenueValue">Çanakkale / Türkiye</span></div>
-          <div class="meta-card"><strong id="metaFormatLabel">Format</strong><span id="metaFormatValue">Hibrit</span></div>
-        </div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact-form" id="heroBtnPrimary">Bildiri Gönder</a>
-          <a class="btn btn-secondary" href="#topics" id="heroBtnSecondary">Konuları İncele</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            ☰
+          </button>
         </div>
       </div>
+    </header>
 
-      <div class="hero-side reveal delay-1">
-        <div class="countdown-card">
-          <p class="countdown-label" id="countdownLabel">Konferansa Kalan Süre</p>
-          <div class="countdown-grid" id="countdown">
-            <div><span id="days">--</span><small id="daysLabel">Gün</small></div>
-            <div><span id="hours">--</span><small id="hoursLabel">Saat</small></div>
-            <div><span id="minutes">--</span><small id="minutesLabel">Dakika</small></div>
-            <div><span id="seconds">--</span><small id="secondsLabel">Saniye</small></div>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-slider" id="heroSlider">
+          <div class="hero-slide active">
+            <img
+              src="assets/slide-1.jpg"
+              alt="Conference visual"
+              class="hero-bg"
+            />
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+              <span class="hero-badge" data-i18n="hero.badge">
+                IQLC 2026
+              </span>
+
+              <h1 data-i18n="hero.title">
+                Uluslararası Yaşam Kalitesi Konferansı
+              </h1>
+
+              <p data-i18n="hero.subtitle">
+                Akademi, sağlık, toplum ve sürdürülebilir yaşam ekseninde
+                uluslararası buluşma.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary" data-i18n="hero.cta1">
+                  Detayları İncele
+                </a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta2">
+                  İletişime Geç
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button type="button" id="prevSlide" aria-label="Previous slide">
+              ‹
+            </button>
+            <button type="button" id="nextSlide" aria-label="Next slide">
+              ›
+            </button>
           </div>
         </div>
-        <div class="floating-badges">
-          <span id="badge1">TR / EN Bildiriler</span>
-          <span id="badge2">ISBN Bildiri Kitabı</span>
-          <span id="badge3">Hibrit Etkinlik</span>
-          <span id="badge4">Uluslararası Kurul</span>
+
+        <div class="ticker-wrapper">
+          <div class="ticker-track" id="tickerTrack"></div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="hero-marquee">
-      <div class="marquee-track">
-        <span>Wellbeing</span><span>Health</span><span>Urban Life</span><span>Sustainability</span><span>Education</span><span>Media</span><span>Culture</span><span>Interdisciplinary Research</span>
-        <span>Wellbeing</span><span>Health</span><span>Urban Life</span><span>Sustainability</span><span>Education</span><span>Media</span><span>Culture</span><span>Interdisciplinary Research</span>
-      </div>
-    </div>
-  </header>
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-eyebrow" data-i18n="about.eyebrow">
+              Konferans
+            </span>
+            <h2 data-i18n="about.title">IQLC 2026 Hakkında</h2>
+          </div>
 
-  <main>
-    <section class="section invitation-section" id="about">
-      <div class="container invitation-grid">
-        <div class="section-heading reveal">
-          <span class="section-kicker" id="inviteKicker">Davet</span>
-          <h2 id="inviteTitle">Konferans Daveti</h2>
-          <div class="invite-card">
-            <p><strong id="inviteP1" data-tr="Değerli Araştırmacılar" data-en="Dear Researchers">Değerli Araştırmacılar</strong></p>
-            <p id="inviteP2" data-tr="Yaşamın nicelik ve nitelik olarak anlamlı bir şeklide sürdürülmesi varoluşumuzun temellerini oluşturmaktadır. Bu bağlamda, Yaşam kalitesi kavramı çok boyutlu ve disiplinlerarası bir içerikle karşımıza çıkmaktadır. Bu konferansta yaşam kalitesi, disiplinlerarası bir çerçevede ele alınacak ve tüm yönleriyle tartışılacaktır." data-en="Maintaining life in a meaningful way, both quantitatively and qualitatively, forms the basis of our existence. In this context, the concept of quality of life emerges as a multidimensional and interdisciplinary field. At this conference, quality of life will be addressed within an interdisciplinary framework and discussed in all its aspects.">Yaşamın nicelik ve nitelik olarak anlamlı bir şeklide sürdürülmesi varoluşumuzun temellerini oluşturmaktadır. Bu bağlamda, Yaşam kalitesi kavramı çok boyutlu ve disiplinlerarası bir içerikle karşımıza çıkmaktadır. Bu konferansta yaşam kalitesi, disiplinlerarası bir çerçevede ele alınacak ve tüm yönleriyle tartışılacaktır.</p>
-            <p id="inviteP3" data-tr="Kongremiz bilim insanları, eğitmenler, öğretmenler, doktorlar, fizyoterapistler ve yaşam kalitesi, sağlık, spor, beslenme ve eğitim ortamıyla ilgilenen tüm kişilere yöneliktir." data-en="Our congress is intended for scientists, trainers, teachers, doctors, physiotherapists, and all individuals interested in quality of life, health, sports, nutrition and educational environments.">Kongremiz bilim insanları, eğitmenler, öğretmenler, doktorlar, fizyoterapistler ve yaşam kalitesi, sağlık, spor, beslenme ve eğitim ortamıyla ilgilenen tüm kişilere yöneliktir.</p>
-            <p id="inviteP4" data-tr="Bildiriler Türkçe ya da İngilizce dilinde hazırlanabilir. Sunulan bildiriler için farklı yayın seçenekleri mevcuttur." data-en="Papers may be prepared in Turkish or English. Different publication options are available for presented papers.">Bildiriler Türkçe ya da İngilizce dilinde hazırlanabilir. Sunulan bildiriler için farklı yayın seçenekleri mevcuttur.</p>
-            <p id="inviteP5" data-tr="Bu kapsamda, kongremizi <strong>10-11 Aralık 2026</strong> tarihlerinde <strong>Çanakkale'de hibrit</strong> olarak gerçekleştireceğiz. Bu organizasyonda sizleri de aramızda görmekten büyük mutluluk duyacağız." data-en="Within this scope, we will hold our congress in <strong>hybrid format in Çanakkale on 10–11 December 2026</strong>. We will be very pleased to welcome you among us in this organization.">Bu kapsamda, kongremizi <strong>10-11 Aralık 2026</strong> tarihlerinde <strong>Çanakkale'de hibrit</strong> olarak gerçekleştireceğiz. Bu organizasyonda sizleri de aramızda görmekten büyük mutluluk duyacağız.</p>
-            <p id="inviteP6" data-tr="Saygılarımızla…" data-en="Kind regards…">Saygılarımızla…</p>
-            <div class="signature-block">
-              <strong>Prof. Dr. Özge UYSAL ŞAHİN</strong>
-              <span id="signatureRole">Konferans Başkanı</span>
+          <div class="about-grid">
+            <div class="card">
+              <h3 data-i18n="about.card1Title">Uluslararası Katılım</h3>
+              <p data-i18n="about.card1Text">
+                Farklı ülkelerden akademisyenleri, uzmanları ve kurumları bir
+                araya getiren çok disiplinli bir platform.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3 data-i18n="about.card2Title">Bilimsel İçerik</h3>
+              <p data-i18n="about.card2Text">
+                Yaşam kalitesi, sağlık, eğitim, çevre, kent ve toplumsal refah
+                ekseninde güncel oturumlar.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3 data-i18n="about.card3Title">Küresel Etki</h3>
+              <p data-i18n="about.card3Text">
+                Bilgi paylaşımını güçlendiren, iş birliği fırsatları sunan ve
+                sürdürülebilir gelecek vizyonunu destekleyen bir buluşma.
+              </p>
             </div>
           </div>
         </div>
-        <aside class="president-card reveal delay-1">
-          <div class="portrait-wrap">
-            <img src="assets/president.png" alt="Prof. Dr. Özge Uysal Şahin" class="president-image" />
+      </section>
+
+      <section class="section alt" id="topics">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-eyebrow" data-i18n="topics.eyebrow">Temalar</span>
+            <h2 data-i18n="topics.title">Odak Alanları</h2>
           </div>
-          <div class="president-caption">
-            <h3>Prof. Dr. Özge UYSAL ŞAHİN</h3>
-            <p id="presidentRole">Konferans Başkanı</p>
+
+          <div class="topics-grid">
+            <div class="topic-item" data-i18n="topics.item1">Sağlık ve İyi Oluş</div>
+            <div class="topic-item" data-i18n="topics.item2">Eğitim ve Toplum</div>
+            <div class="topic-item" data-i18n="topics.item3">Kent, Çevre ve Yaşam</div>
+            <div class="topic-item" data-i18n="topics.item4">Sosyal Politika</div>
+            <div class="topic-item" data-i18n="topics.item5">Sürdürülebilirlik</div>
+            <div class="topic-item" data-i18n="topics.item6">Disiplinlerarası Çalışmalar</div>
           </div>
-        </aside>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="section section-alt" id="dates">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" id="datesKicker">Tarih</span>
-          <h2>10–11 Aralık 2026</h2>
-          <p id="datesIntro">Konferans Çanakkale'de hibrit formatta gerçekleştirilecektir.</p>
-        </div>
-        <div class="timeline-grid reveal delay-1">
-          <article class="timeline-card featured">
-            <h3 id="venueTitle">Konferans Yeri</h3>
-            <p>Çanakkale Onsekiz Mart Üniversitesi, Çanakkale Uygulamalı Bilimler Fakültesi Konferans Salonu</p>
-          </article>
-          <article class="timeline-card"><span>10/12/2026</span><h3 id="day1Title">1. Gün</h3></article>
-          <article class="timeline-card"><span>11/12/2026</span><h3 id="day2Title">2. Gün</h3></article>
-          <article class="timeline-card"><span id="paperLangShort">TR</span><h3 id="paperLangTitle">Türkçe Bildiri</h3></article>
-          <article class="timeline-card"><span id="hybridShort">Hibrit</span><h3 id="hybridTitle">Yüz Yüze + Online Katılım</h3></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section topics-section" id="topics">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" id="topicsKicker">Konular</span>
-          <h2 id="topicsTitle">Konferans Konuları</h2>
-          <p id="topicsIntro">Konferans, yaşam kalitesini çok boyutlu bir çerçevede ele alan disiplinlerarası araştırmaları bir araya getirir.</p>
-        </div>
-
-        <div class="featured-tracks reveal">
-          <article class="track-card"><span class="track-label" data-tr="Öne Çıkan Temalar" data-en="Featured Tracks">Öne Çıkan Temalar</span><h3 data-tr="Sağlık ve İyi Oluş" data-en="Health & Wellbeing">Sağlık ve İyi Oluş</h3><p data-tr="Sağlık, psikoloji, spor ve iyi oluş eksenindeki çalışmalar." data-en="Research on health, psychology, sport and wellbeing.">Sağlık, psikoloji, spor ve iyi oluş eksenindeki çalışmalar.</p></article>
-          <article class="track-card"><span class="track-label" data-tr="Öne Çıkan Temalar" data-en="Featured Tracks">Öne Çıkan Temalar</span><h3 data-tr="Dijital Yaşam" data-en="Digital Life">Dijital Yaşam</h3><p data-tr="Dijitalleşme, medya ve veri odaklı yaşam pratikleri." data-en="Digitalization, media and data-driven life practices.">Dijitalleşme, medya ve veri odaklı yaşam pratikleri.</p></article>
-          <article class="track-card"><span class="track-label" data-tr="Öne Çıkan Temalar" data-en="Featured Tracks">Öne Çıkan Temalar</span><h3 data-tr="Sürdürülebilir Şehirler" data-en="Sustainable Cities">Sürdürülebilir Şehirler</h3><p data-tr="Şehir, çevre, enerji ve kamu hizmetleri perspektifi." data-en="Urban life, environment, energy and public services perspective.">Şehir, çevre, enerji ve kamu hizmetleri perspektifi.</p></article>
-          <article class="track-card"><span class="track-label" data-tr="Öne Çıkan Temalar" data-en="Featured Tracks">Öne Çıkan Temalar</span><h3 data-tr="Kültür ve Toplum" data-en="Culture & Society">Kültür ve Toplum</h3><p data-tr="Eğitim, kültür, sanat, hukuk ve toplumsal yaşam ilişkileri." data-en="Education, culture, arts, law and social life relations.">Eğitim, kültür, sanat, hukuk ve toplumsal yaşam ilişkileri.</p></article>
-        </div>
-
-        <div class="keyword-cloud reveal delay-1">
-          <span data-tr="İyi Oluş" data-en="Wellbeing">İyi Oluş</span><span data-tr="Sağlık" data-en="Health">Sağlık</span><span data-tr="Kentsel Yaşam" data-en="Urban Life">Kentsel Yaşam</span><span data-tr="Sürdürülebilirlik" data-en="Sustainability">Sürdürülebilirlik</span><span data-tr="Eğitim" data-en="Education">Eğitim</span><span data-tr="Medya" data-en="Media">Medya</span><span data-tr="Psikoloji" data-en="Psychology">Psikoloji</span><span data-tr="Kültür" data-en="Culture">Kültür</span><span data-tr="Dijital Yaşam" data-en="Digital Life">Dijital Yaşam</span><span data-tr="Çevre" data-en="Environment">Çevre</span>
-        </div>
-
-        <div class="topics-grid reveal delay-1">
-          <article class="topic-card"><div class="topic-icon">◌</div><h3 data-tr="Kavramsal tartışmalar" data-en="Conceptual debates">Kavramsal tartışmalar</h3><p class="topic-hover" data-tr="Quality of life kavramının kuramsal çerçevesi, tanımları ve disiplinlerarası tartışmaları." data-en="Theoretical framework, definitions and interdisciplinary debates on quality of life.">Quality of life kavramının kuramsal çerçevesi, tanımları ve disiplinlerarası tartışmaları.</p></article>
-          <article class="topic-card"><div class="topic-icon">◔</div><h3 data-tr="Yaşam kalitesinin ölçülmesi" data-en="Measurement of quality of life">Yaşam kalitesinin ölçülmesi</h3><p class="topic-hover" data-tr="Ölçekler, göstergeler, veri toplama modelleri ve değerlendirme yaklaşımları." data-en="Scales, indicators, data collection models and evaluation approaches.">Ölçekler, göstergeler, veri toplama modelleri ve değerlendirme yaklaşımları.</p></article>
-          <article class="topic-card"><div class="topic-icon">△</div><h3 data-tr="Dijitalleşme ve yaşam kalitesi" data-en="Digitalization and quality of life">Dijitalleşme ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Dijital dönüşüm, çevrimiçi yaşam ve dijital iyi oluş." data-en="Digital transformation, online life and digital wellbeing.">Dijital dönüşüm, çevrimiçi yaşam ve dijital iyi oluş.</p></article>
-          <article class="topic-card"><div class="topic-icon">◈</div><h3 data-tr="Medya ve yaşam kalitesi" data-en="Media and quality of life">Medya ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Medya tüketimi ve iletişim ortamlarının yaşam kalitesine etkileri." data-en="Effects of media consumption and communication environments on quality of life.">Medya tüketimi ve iletişim ortamlarının yaşam kalitesine etkileri.</p></article>
-          <article class="topic-card"><div class="topic-icon">◎</div><h3 data-tr="Ekonomi ve yaşam kalitesi" data-en="Economy and quality of life">Ekonomi ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Gelir, istihdam, refah ve eşitsizliğin yaşam deneyimine etkileri." data-en="Effects of income, employment, welfare and inequality on life experience.">Gelir, istihdam, refah ve eşitsizliğin yaşam deneyimine etkileri.</p></article>
-          <article class="topic-card"><div class="topic-icon">▢</div><h3 data-tr="Eğitim ve yaşam kalitesi" data-en="Education and quality of life">Eğitim ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Öğrenme ortamları, eğitim politikaları ve kişisel gelişim." data-en="Learning environments, education policies and personal development.">Öğrenme ortamları, eğitim politikaları ve kişisel gelişim.</p></article>
-          <article class="topic-card"><div class="topic-icon">✦</div><h3 data-tr="Kültür, turizm ve yaşam kalitesi" data-en="Culture, tourism and quality of life">Kültür, turizm ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Kültürel üretim, deneyim ekonomisi ve turizm hareketliliği." data-en="Cultural production, experience economy and tourism mobility.">Kültürel üretim, deneyim ekonomisi ve turizm hareketliliği.</p></article>
-          <article class="topic-card"><div class="topic-icon">✳</div><h3 data-tr="Gıda, tarım ve yaşam kalitesi" data-en="Food, agriculture and quality of life">Gıda, tarım ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Beslenme, gıda güvenliği ve sürdürülebilir yaşam pratikleri." data-en="Nutrition, food security and sustainable living practices.">Beslenme, gıda güvenliği ve sürdürülebilir yaşam pratikleri.</p></article>
-          <article class="topic-card"><div class="topic-icon">⬡</div><h3 data-tr="Enerji ve yaşam kalitesi" data-en="Energy and quality of life">Enerji ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Enerjiye erişim, verimlilik ve sürdürülebilir yaşam standartları." data-en="Access to energy, efficiency and sustainable living standards.">Enerjiye erişim, verimlilik ve sürdürülebilir yaşam standartları.</p></article>
-          <article class="topic-card"><div class="topic-icon">♥</div><h3 data-tr="Sağlık ve yaşam kalitesi" data-en="Health and quality of life">Sağlık ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Fiziksel, zihinsel ve sosyal sağlık göstergeleri ile yaşam doyumu." data-en="Life satisfaction through physical, mental and social health indicators.">Fiziksel, zihinsel ve sosyal sağlık göstergeleri ile yaşam doyumu.</p></article>
-          <article class="topic-card"><div class="topic-icon">⟡</div><h3 data-tr="Spor ve yaşam kalitesi" data-en="Sport and quality of life">Spor ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Hareket, fiziksel aktivite ve sağlıklı yaşam davranışları." data-en="Movement, physical activity and healthy life behaviours.">Hareket, fiziksel aktivite ve sağlıklı yaşam davranışları.</p></article>
-          <article class="topic-card"><div class="topic-icon">⌂</div><h3 data-tr="Yaşanabilir şehirler" data-en="Livable cities">Yaşanabilir şehirler</h3><p class="topic-hover" data-tr="Kentsel tasarım, hareketlilik, güvenlik ve erişilebilirlik." data-en="Urban design, mobility, safety and accessibility.">Kentsel tasarım, hareketlilik, güvenlik ve erişilebilirlik.</p></article>
-          <article class="topic-card"><div class="topic-icon">⚖</div><h3 data-tr="Hukuk ve yaşam kalitesi" data-en="Law and quality of life">Hukuk ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Haklar, adalet, eşitlik ve hukuki düzenlemelerin rolü." data-en="Rights, justice, equality and the role of legal regulations.">Haklar, adalet, eşitlik ve hukuki düzenlemelerin rolü.</p></article>
-          <article class="topic-card"><div class="topic-icon">☼</div><h3 data-tr="Psikoloji ve yaşam kalitesi" data-en="Psychology and quality of life">Psikoloji ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Bireysel iyi oluş, duygu durumu ve psikososyal süreçler." data-en="Individual wellbeing, mood and psychosocial processes.">Bireysel iyi oluş, duygu durumu ve psikososyal süreçler.</p></article>
-          <article class="topic-card"><div class="topic-icon">✺</div><h3 data-tr="Sanat ve yaşam kalitesi" data-en="Arts and quality of life">Sanat ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Sanatsal ifade, estetik deneyim ve yaratıcı üretim." data-en="Artistic expression, aesthetic experience and creative production.">Sanatsal ifade, estetik deneyim ve yaratıcı üretim.</p></article>
-          <article class="topic-card"><div class="topic-icon">▣</div><h3 data-tr="Kamu hizmetleri ve yaşam kalitesi" data-en="Public services and quality of life">Kamu hizmetleri ve yaşam kalitesi</h3><p class="topic-hover" data-tr="Kamu yönetimi, sosyal politika ve hizmet kalitesi." data-en="Public administration, social policy and service quality.">Kamu yönetimi, sosyal politika ve hizmet kalitesi.</p></article>
-          <article class="topic-card"><div class="topic-icon">❋</div><h3 data-tr="Yaşam kalitesi ve çevresel sorunlar" data-en="Quality of life and environmental issues">Yaşam kalitesi ve çevresel sorunlar</h3><p class="topic-hover" data-tr="İklim, çevre, ekolojik denge ve sürdürülebilir gelecekler." data-en="Climate, environment, ecological balance and sustainable futures.">İklim, çevre, ekolojik denge ve sürdürülebilir gelecekler.</p></article>
-          <article class="topic-card"><div class="topic-icon">∞</div><h3 data-tr="Diğer ilgili konular…" data-en="Other related topics…">Diğer ilgili konular…</h3><p class="topic-hover" data-tr="Yaşam kalitesiyle ilişkili özgün, yeni ve disiplinlerarası alanlar." data-en="Original, emerging and interdisciplinary fields related to quality of life.">Yaşam kalitesiyle ilişkili özgün, yeni ve disiplinlerarası alanlar.</p></article>
-        </div>
-
-        <div class="callout-strip reveal">
-          <span class="callout-tag" id="calloutTag">Bildiri Çağrısı</span>
-          <h3 id="calloutText">Disiplinlerarası bildiriler memnuniyetle kabul edilir.</h3>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="publication">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" id="pubKicker">Yayın Olanakları</span>
-          <h2 id="pubTitle">Sunulan Bildiriler İçin Seçenekler</h2>
-        </div>
-        <div class="info-grid reveal delay-1">
-          <article class="glass-card"><h3>Bildiri Kitabı / Proceedings</h3><p>Sunulan bildiriler ISBN’li elektronik bildiri kitabında yayımlanacaktır.</p></article>
-          <article class="glass-card"><h3>Editöryal Kitap / Editorial Book</h3><p>Uygun çalışmalar ilgili alanlarda bölüm olarak değerlendirilebilir.</p></article>
-          <article class="glass-card"><h3>Dergi İmkânı / Journal Option</h3><p>Uygun bildiriler editör değerlendirmesi sonrası dergilere yönlendirilebilir.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="registration">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" id="regKicker">Katılım</span>
-          <h2 id="regTitle">Kayıt ve Ödeme Bilgileri</h2>
-        </div>
-        <div class="info-grid reveal delay-1">
-          <article class="glass-card"><h3>Online Katılım</h3><p>Çevrim içi katılım seçenekleri konferans programıyla duyurulacaktır.</p></article>
-          <article class="glass-card"><h3>Yüz Yüze Katılım</h3><p>Çanakkale’de fiziksel katılım ile sunum ve networking imkânı.</p></article>
-          <article class="glass-card"><h3>Banka Bilgisi</h3><p><strong>Hesap Adı:</strong> Yaşam Kalitesi Derneği<br><strong>Banka:</strong> Ziraat Bankası Kordon Şubesi</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section boards-section" id="boards">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker" id="boardsKicker">Kurullar</span>
-          <h2 id="boardsTitle">Konferans Kurulları</h2>
-        </div>
-
-        <div class="board-block reveal">
-          <h3 id="boardPresidentTitle">Konferans Başkanı</h3>
-          <ul class="board-list compact-list">
-            <li>UYSAL ŞAHİN, Özge (Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-          </ul>
-        </div>
-
-        <div class="board-block reveal delay-1">
-          <h3 id="advisoryTitle">Danışma Kurulu</h3>
-          <ul class="board-list two-col">
-            <li>BAŞ, İ. Melih (Prof. Dr., Istanbul Arel University, TÜRKİYE)</li>
-            <li>BERKSOY, Turgay (Prof. Dr., Marmara University / Emeritus, TÜRKİYE)</li>
-            <li>BATRANCEA, Larissa (Assoc. Prof. Dr., Babes-Bolyai University Cluj-Napoca, Faculty of Business, ROMANIA)</li>
-            <li>EZENDU, Ariwa (Prof. Dr., University of Bedfordshire, UNITED KINGDOM)</li>
-            <li>ILIK, Goran (Prof. Dr., University of St. Clement of Ohrid, MACEDONIA)</li>
-            <li>JAVANI, Hojjatollah (Assoc. Prof. Dr., Alzahra University, İRAN)</li>
-            <li>METRİ, Bhimaraya (Prof. Dr., Director at Indian Institute of Management Nagpur, INDIA)</li>
-            <li>NOVRUZOVA, Nurida (Prof. Dr., Baku Slavic University, AZERBAIJAN)</li>
-            <li>ŞAHİN, Mehmet (Prof. Dr., Çanakkale Onsekiz Mart Üniversitesi, TÜRKİYE)</li>
-            <li>ZHARKYNBEKOVA, Şolpan (Prof. Dr., L.N. Gumilyov Eurasian National University, KAZAKHISTAN)</li>
-          </ul>
-        </div>
-
-        <div class="board-block reveal delay-1">
-          <h3 id="organizingTitle">Düzenleme Kurulu</h3>
-          <ul class="board-list two-col">
-            <li>ERBAY, Hasan (Assoc. Prof. Dr., Afyonkarahisar Health Sciences University, TÜRKİYE)</li>
-            <li>HERSEK SARI, İlknur (Holistence Academy, TÜRKİYE)</li>
-            <li>SÖYLEMEZOĞLU, Ergül (Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>ŞAHİN, Mehmet (Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>ŞAHİN, Özge Uysal (Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-          </ul>
-        </div>
-
-        <div class="board-block reveal delay-1">
-          <h3 id="scientificTitle">Bilim Kurulu</h3>
-          <ul class="board-list three-col">
-            <li>AKAR, Sevda (Prof. Dr., Bandırma Onyedi Eylül University, TÜRKİYE)</li>
-            <li>AKGÖL, Jale (Assist. Prof. Dr., Afyonkarahisar Health Sciences University, TÜRKİYE)</li>
-            <li>AL-RAWAD, Mahmaod (Dr., Al Hussein Bin Talal University, JORDAN)</li>
-            <li>ALSON, Jollie N. (Dr., University of Perpetual Help System, PHILIPPINES)</li>
-            <li>ANANTH, Christo (Dr., Francis Xavier Engineering College, INDIA)</li>
-            <li>ARABSKA, Ekaterina (Prof. Dr., University of Agribusiness and Rural Development, BULGARIA)</li>
-            <li>AWANG, Amran (Assoc. Prof. Dr., Universiti Teknologi Mara, MALAYSIA)</li>
-            <li>AYYILDIZ ONARAN, Zahide (Prof. Dr., İstanbul Üniversitesi, TÜRKİYE)</li>
-            <li>BAŞ, İ. Melih (Prof. Dr., İstanbul Arel Üniversitesi, TÜRKİYE)</li>
-            <li>BERKSOY, Turgay (Prof. Dr., Marmara Üniversitesi, TÜRKİYE)</li>
-            <li>BURLUTSKI, Sergii (Prof. Dr., Odessa National Economic University, UKRAINE)</li>
-            <li>CEROVIC, Slobodan (Prof. Dr., Singidunum University, SERBIA)</li>
-            <li>ÇALBAYRAM, Nazan (Assoc. Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>DİLBAZ ALACAHAN, Nur (Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>EMİNİ KURTULUŞ, Filiz Tufan (Assoc. Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>ERBAY, Hasan (Assoc. Prof. Dr., Afyonkarahisar Health Sciences University, TÜRKİYE)</li>
-            <li>ERTOK ONURLU, Merve (Assoc. Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>GEYBULLAYEVA, Rahiyla (Prof. Dr., Baku Slavic University, AZERBAIJAN)</li>
-            <li>GHOTBI, Nader (Prof. Dr., Ritsumeikan Asia Pacific University, JAPAN)</li>
-            <li>HYBKA, Malgorzata Magdalena (Prof. Dr., Poznan University of Economics and Business, POLAND)</li>
-            <li>ILIK, Goran (Dr., University of St. Clement of Ohrid – Bitola, MACEDONIA)</li>
-            <li>JAVANI, Hojjatollah (Assoc. Prof. Dr., Alzahra University, İRAN)</li>
-            <li>JURAEV, Mamatkul (Prof. Dr., Academy of Sciences, UZBEKISTAN)</li>
-            <li>KYRİAZOPOULOS, Panagiotis (Prof. Dr., Graduate Technological Education Institute of Piraeus, GREECE)</li>
-            <li>MITREVA, Elizabeta (Prof. Dr., Goce Delcev University, MACEDONIA)</li>
-            <li>ÖZDEMİR, Yüksel (Prof. Dr., Toros University, TÜRKİYE)</li>
-            <li>PUSTYLNICK, Igor (Prof. Dr., Conestoga College, CANADA)</li>
-            <li>QUINTILIANI, Andrea (Dr., Pegaso Telematic University, ITALY)</li>
-            <li>ROUBAIE, Amer Al (Prof. Dr., Ahlia University, BAHRAIN)</li>
-            <li>RODRIGUEZ MORALES, Julia Isabel (Dr., Benemérita Universidad Autónoma de Puebla, SPAIN)</li>
-            <li>SAGIDOLDA, Gulgaisha (Dr., L. N. Gumilyov Eurasian National University, KAZAKHSTAN)</li>
-            <li>SEZER, Berkant (Assoc. Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>SHARMA, Nikesh (Dr., Himachal Pradesh University, INDIA)</li>
-            <li>ŞAHİN, Mehmet (Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>ŞAHİN, Özge Uysal (Prof. Dr., Çanakkale Onsekiz Mart University, TÜRKİYE)</li>
-            <li>ŞİMŞEK KANDEMİR, Aysen (Assoc. Prof. Dr., Kocaeli University, TÜRKİYE)</li>
-            <li>TENGİLİMOĞLU, Dilaver (Prof. Dr., Atılım University, TÜRKİYE)</li>
-            <li>TURAMANALAR, Ozan (Prof. Dr., İzmir Katip Çelebi University, TÜRKİYE)</li>
-            <li>YUMARMA, Andreas (Prof. Dr., President University, INDONESIA)</li>
-            <li>ZHARKYNBEKOVA, Sholpan (Prof. Dr., L.N. Gumilyov Eurasian National University, KAZAKHSTAN)</li>
-            <li>ZINCHENKO, Lyudmila (Prof. Dr., Bauman Moscow State Technical University, RUSSIA)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt contact-section" id="contact">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-kicker">İletişim / Contact</span>
-          <h2>Bize Ulaşın</h2>
-        </div>
-        <div class="contact-grid">
-          <div class="map-card reveal">
-            <iframe title="Yaşam Kalitesi Derneği Google Maps" src="https://maps.google.com/maps?q=Ya%C5%9Fam%20Kalitesi%20Derne%C4%9Fi%2C%20%C3%87anakkale&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="section" id="speakers">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-eyebrow" data-i18n="speakers.eyebrow">
+              Konuşmacılar
+            </span>
+            <h2 data-i18n="speakers.title">Yakında Açıklanacak</h2>
           </div>
-          <div class="contact-info reveal delay-1">
-            <div class="glass-card">
-              <h3>İletişim Bilgileri</h3>
-              <p><strong>E-posta:</strong> yasamkalitesidernegi@gmail.com</p>
-              <p><strong>Konum:</strong> Çanakkale, Türkiye</p>
-              <p><strong>Konferans:</strong> IQLC 2026</p>
+
+          <div class="info-box">
+            <p data-i18n="speakers.text">
+              Davetli konuşmacılar ve oturum detayları çok yakında bu alanda
+              paylaşılacaktır.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-box">
+            <div>
+              <span class="section-eyebrow" data-i18n="contact.eyebrow">
+                İletişim
+              </span>
+              <h2 data-i18n="contact.title">Bizimle İletişime Geçin</h2>
+              <p data-i18n="contact.text">
+                Konferansla ilgili soru, iş birliği ve katılım talepleriniz için
+                bizimle iletişime geçebilirsiniz.
+              </p>
             </div>
-            <form id="contact-form" class="contact-form glass-card" action="https://formsubmit.co/yasamkalitesidernegi@gmail.com" method="POST">
-              <h3>Mesaj Gönder</h3>
-              <input type="hidden" name="_subject" value="IQLC 2026 Web Sitesi İletişim Formu" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="true" />
-              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
-              <div class="form-row">
-                <input type="text" name="Ad Soyad / Full Name" placeholder="Ad Soyad / Full Name" required>
-                <input type="email" name="E-posta / Email" placeholder="E-posta / Email" required>
-              </div>
-              <div class="form-row">
-                <input type="tel" name="Telefon / Phone" placeholder="Telefon / Phone" required>
-              </div>
-              <textarea name="Mesaj / Message" rows="6" placeholder="Mesaj / Message" required></textarea>
-              <button class="btn btn-primary" type="submit">Gönder / Send</button>
-              <p class="form-note">Form ilk kullanımda e-posta doğrulaması ister; doğrulandıktan sonra mesajlar doğrudan belirtilen adrese iletilir.</p>
-            </form>
+
+            <a href="mailto:yasamkalitesidernegi@gmail.com" class="btn btn-primary">
+              info@iqlc.org
+            </a>
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.copy">
+          © 2026 IQLC - Tüm hakları saklıdır.
+        </p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© 2026 IQLC • Yaşam Kalitesi Derneği</p>
-      <a href="#home">Yukarı Dön</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <script src="script.js"></script>
+  </body>
+</html>F

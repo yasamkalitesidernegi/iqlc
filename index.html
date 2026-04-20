@@ -1,42 +1,155 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IQLC 2026</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IQLC 2026 | Uluslararası Yaşam Kalitesi Konferansı</title>
+  <meta name="description" content="Uluslararası Yaşam Kalitesi Konferansı 2026 resmi sayfası" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header" id="top">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?auto=format&fit=crop&w=1800&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-glow"></div>
+    </div>
 
-<div class="hero">
-  <div class="overlay"></div>
-
-  <div class="content">
-    <div class="topbar">
+    <nav class="topbar container">
       <div class="badge">IQLC 2026</div>
-      <div class="lang">
-        <button onclick="setLang('tr')">TR</button>
-        <button onclick="setLang('en')">EN</button>
+      <div class="topbar-actions">
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang-btn="tr">TR</button>
+          <button class="lang-btn" data-lang-btn="en">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="hero-main">
+        <div class="hero-title-wrap">
+          <div class="hero-roman">III.</div>
+          <div class="hero-title-block">
+            <h1 data-i18n="hero.title">Uluslararası Yaşam Kalitesi Konferansı</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Akademi, sağlık, toplum ve sürdürülebilir yaşam ekseninde uluslararası buluşma.</p>
+          </div>
+        </div>
+
+        <div class="hero-info-grid">
+          <div class="info-card">
+            <span class="info-label" data-i18n="hero.year">Yıl</span>
+            <strong class="info-value">2026</strong>
+          </div>
+          <div class="info-card">
+            <span class="info-label" data-i18n="hero.series">Seri</span>
+            <strong class="info-value" data-i18n="hero.seriesValue">III. Konferans</strong>
+          </div>
+          <div class="info-card">
+            <span class="info-label" data-i18n="hero.focus">Odak</span>
+            <strong class="info-value" data-i18n="hero.focusValue">Yaşam Kalitesi</strong>
+          </div>
+          <div class="info-card">
+            <span class="info-label" data-i18n="hero.date">Tarih</span>
+            <strong class="info-value" data-i18n="hero.dateValue">10-11 Aralık 2026</strong>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#themes" class="btn btn-primary" data-i18n="hero.primaryBtn">Konferansı İncele</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.secondaryBtn">İletişime Geç</a>
+        </div>
+
+        <div class="slider-dots" aria-label="Hero slides">
+          <button class="dot active" data-slide="0" aria-label="slide 1"></button>
+          <button class="dot" data-slide="1" aria-label="slide 2"></button>
+          <button class="dot" data-slide="2" aria-label="slide 3"></button>
+          <button class="dot" data-slide="3" aria-label="slide 4"></button>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="side-card">
+          <div class="side-card-label" data-i18n="hero.date">Tarih</div>
+          <div class="side-card-value" data-i18n="hero.dateValue">10-11 Aralık 2026</div>
+        </div>
+        <div class="side-card">
+          <div class="side-card-label">Dil / Language</div>
+          <div class="side-card-value">Türkçe & English</div>
+        </div>
+        <div class="side-card">
+          <div class="side-card-label">Format</div>
+          <div class="side-card-value">Hybrid / International</div>
+        </div>
       </div>
     </div>
+  </header>
 
-    <div class="title">
-      <div class="roman">III.</div>
+  <main>
+    <section class="section container" id="themes">
+      <div class="section-heading">
+        <span class="section-kicker" data-i18n="themes.kicker">Tematik Alanlar</span>
+        <h2 data-i18n="themes.title">Konferans Temaları</h2>
+        <p data-i18n="themes.desc">Ana sayfada öne çıkan başlıklar ve ilgili tematik alanların tamamı yer almaktadır.</p>
+      </div>
+      <div class="cards-grid topics-grid" id="themesGrid"></div>
+    </section>
+
+    <section class="section container" id="publications">
+      <div class="section-heading">
+        <span class="section-kicker" data-i18n="pubs.kicker">Yayın</span>
+        <h2 data-i18n="pubs.title">Yayın Olanakları</h2>
+        <p data-i18n="pubs.desc">Sunulan bildiriler için farklı yayın seçenekleri yapılandırılmıştır.</p>
+      </div>
+      <div class="cards-grid publication-grid" id="publicationGrid"></div>
+    </section>
+
+    <section class="section container" id="boards">
+      <div class="section-heading">
+        <span class="section-kicker" data-i18n="boards.kicker">Akademik Yapı</span>
+        <h2 data-i18n="boards.title">Kurullar</h2>
+        <p data-i18n="boards.desc">Konferans başkanı ve tüm kurullar düzenli kart yapısı içinde gösterilmektedir.</p>
+      </div>
+
+      <div class="boards-layout">
+        <div class="board-card compact">
+          <h3 data-i18n="boards.president">Konferans Başkanı</h3>
+          <div class="board-list" id="presidentList"></div>
+        </div>
+        <div class="board-card">
+          <h3 data-i18n="boards.advisory">Danışma Kurulu</h3>
+          <div class="board-list" id="advisoryList"></div>
+        </div>
+        <div class="board-card">
+          <h3 data-i18n="boards.organizing">Düzenleme Kurulu</h3>
+          <div class="board-list" id="organizingList"></div>
+        </div>
+        <div class="board-card">
+          <h3 data-i18n="boards.scientific">Bilim Kurulu</h3>
+          <div class="board-list" id="scientificList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
       <div>
-        <h1 id="title">Uluslararası Yaşam Kalitesi Konferansı</h1>
-        <p id="subtitle">Akademi, sağlık, toplum ve sürdürülebilir yaşam ekseninde uluslararası buluşma.</p>
+        <strong>IQLC 2026</strong>
+        <p data-i18n="footer.note">Bu taslak, Türkçe ve İngilizce sayfalarda aynı ana çatıyı koruyacak şekilde yapılandırıldı.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:yasamkalitesidernegi@gmail.com">yasamkalitesidernegi@gmail.com</a>
+        <a href="https://journals.gen.tr/" target="_blank" rel="noopener">journals.gen.tr</a>
       </div>
     </div>
+  </footer>
 
-    <div class="info">
-      <div>2026</div>
-      <div>III. Konferans</div>
-      <div>Yaşam Kalitesi</div>
-      <div>10-11 Aralık 2026</div>
-    </div>
-  </div>
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
